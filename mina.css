@@ -1,0 +1,36 @@
+h1
+{
+    color: brown;
+    font-size: 10px;
+    display:flex;
+    flex-direction: column-reverse;
+}
+
+.photo
+{
+    max-height:70%;
+    border-radius: 20%;
+    
+}
+.div2
+{
+  margin: auto;
+    position: relative;
+    border: 2px red solid;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    border-radius: 20%;
+}
+.div1
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+}
+.mi
+{
+    position: relative;
+    font-size: 40px;
+}
