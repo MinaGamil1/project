@@ -50,7 +50,7 @@ a:hover { text-decoration: underline; }
 .nav-toggle {
   display: none;
   background: transparent;
-  border: 1px solid var(--border);
+  border: none;
   border-radius: 999px;
   color: var(--text);
   padding: 6px 10px;

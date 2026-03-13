@@ -29,6 +29,17 @@
       var open = nav.classList.toggle('nav--open');
       navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
     });
+
+    // غلق القائمة بعد اختيار أي لينك
+    var links = nav.querySelectorAll('a[href^="#"]');
+    links.forEach(function (link) {
+      link.addEventListener('click', function () {
+        if (nav.classList.contains('nav--open')) {
+          nav.classList.remove('nav--open');
+          navToggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+    });
   }
 })();
 
