@@ -13,7 +13,7 @@
     <header class="site-header">
         <div class="container header-inner">
             <a class="brand" href="#home" aria-label="الانتقال للصفحة الرئيسية">
-                <img class="brand-logo" src="image/logo/logo.png" alt="شركة الشباب لنقل العفش">
+                <img class="brand-logo" src="image/logo/logo2.png" alt="شركة الشباب لنقل العفش">
                 <span class="brand-name">شركة الشباب لنقل العفش داخل جدة</span>
             </a>
             <button class="nav-toggle" type="button" aria-label="فتح القائمة" aria-expanded="false">
@@ -99,30 +99,30 @@
         <section class="section" id="gallery">
             <div class="container">
                 <h2 class="section-title">صور من أعمالنا</h2>
-                <p class="muted">مكان جاهز لإضافة صور من الموقع/الشغل. ضع الصور داخل مجلد `image/gallery/` وعدّل الروابط هنا.</p>
+                <p class="muted">دقة في المواعيد، حماية للأثاث، وسرعة في التنفيذ. هنا تجدون نماذج من شغلنا الواقعي في الميدان، حيث تلتقي الخبرة مع العناية الفائقة لتوفير تجربة نقل خالية من التعب.</p>
                 <div class="gallery" aria-label="معرض الصور">
                     <figure class="gallery-item">
-                        <div class="gallery-ph" aria-hidden="true"></div>
-                        <figcaption class="muted">صورة 1</figcaption>
+                        <img src="image/galary/test.jpeg" alt="صورة من أعمال نقل العفش" class="gallery-image">
+                        <figcaption class="muted">صورة من أعمالنا</figcaption>
                     </figure>
                     <figure class="gallery-item">
-                        <div class="gallery-ph" aria-hidden="true"></div>
+                        <img src="image/galary/test.jpeg" alt="صورة من أعمال نقل العفش" class="gallery-image">
                         <figcaption class="muted">صورة 2</figcaption>
                     </figure>
                     <figure class="gallery-item">
-                        <div class="gallery-ph" aria-hidden="true"></div>
+                        <img src="image/galary/test.jpeg" alt="صورة من أعمال نقل العفش" class="gallery-image">
                         <figcaption class="muted">صورة 3</figcaption>
                     </figure>
                     <figure class="gallery-item">
-                        <div class="gallery-ph" aria-hidden="true"></div>
+                        <img src="image/galary/test.jpeg" alt="صورة من أعمال نقل العفش" class="gallery-image">
                         <figcaption class="muted">صورة 4</figcaption>
                     </figure>
                     <figure class="gallery-item">
-                        <div class="gallery-ph" aria-hidden="true"></div>
+                        <img src="image/galary/test.jpeg" alt="صورة من أعمال نقل العفش" class="gallery-image">
                         <figcaption class="muted">صورة 5</figcaption>
                     </figure>
                     <figure class="gallery-item">
-                        <div class="gallery-ph" aria-hidden="true"></div>
+                        <img src="image/galary/test.jpeg" alt="صورة من أعمال نقل العفش" class="gallery-image">
                         <figcaption class="muted">صورة 6</figcaption>
                     </figure>
                 </div>
@@ -177,40 +177,6 @@
         </div>
     </footer>
 
-    <script>
-      (function () {
-        var PHONE_WA = "201553053626";
-
-        // ارسال الفورم كرسالة واتساب
-        var form = document.getElementById("contactForm");
-        if (form) {
-          form.addEventListener("submit", function (e) {
-            e.preventDefault();
-            var fd = new FormData(form);
-            var name = String(fd.get("name") || "").trim();
-            var phone = String(fd.get("phone") || "").trim();
-            var message = String(fd.get("message") || "").trim();
-
-            var text =
-              "طلب نقل عفش داخل جدة%0A" +
-              (name ? ("الاسم: " + encodeURIComponent(name) + "%0A") : "") +
-              (phone ? ("رقم العميل: " + encodeURIComponent(phone) + "%0A") : "") +
-              (message ? ("التفاصيل: " + encodeURIComponent(message)) : "");
-
-            window.open("https://wa.me/" + PHONE_WA + "?text=" + text, "_blank", "noopener");
-          });
-        }
-
-        // فتح/غلق قائمة الموبايل
-        var navToggle = document.querySelector(".nav-toggle");
-        var nav = document.querySelector(".nav");
-        if (navToggle && nav) {
-          navToggle.addEventListener("click", function () {
-            var open = nav.classList.toggle("nav--open");
-            navToggle.setAttribute("aria-expanded", open ? "true" : "false");
-          });
-        }
-      })();
-    </script>
+    <script src="js/main.js"></script>
 </body>
 </html>
